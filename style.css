@@ -1,0 +1,232 @@
+body{
+    background-image: url(img/105865831_1123757008006656_6523332651314606187_n.jpg);
+    background-size: cover;
+    width: 1280px;
+    margin: 1em 6em;
+    display: inline-flex;
+    justify-content: space-between ; 
+    align-items: first baseline;    
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+                        url('img/105865831_1123757008006656_6523332651314606187_n.jpg') no-repeat center center/cover;
+
+}
+
+div .orarul{
+    width: 456px;
+    
+    padding: 0 20px 29px 8px;
+}
+
+div .orarul h1{
+    color: #666666 ;
+    font-size: 20px;
+    text-align: center;
+    background-color: white;
+    margin: 0px 0px 20px;
+    padding: 15px 29px 15px 15px;
+    font-weight: 900;
+   
+}
+
+
+
+div .grupe{
+    width: 456px;
+    justify-content: space-between;
+    display: flex;
+    flex-wrap: nowrap;
+    margin: 0px 0px 20px;
+    padding: 0 20px 29px 8px;
+}
+button{
+    box-sizing: border-box;
+    padding: 10px 30px;
+    background-color: #25975A;
+    color: white;
+    font-size: 16px;
+    font-weight: 900;
+    font-family: 'Times New Roman', Times, serif;
+    
+}
+
+div .regim{
+    width: 250px;
+    padding: 0 0px 29px 15px;
+    display: flex;
+    justify-content: space-between;
+    overflow: auto;
+}
+
+div .regim p{
+    color: white;
+    font-weight: 900;
+}
+
+.slider {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+
+
+.slider input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+
+.slider .slider-container {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: 0.4s;
+    
+}
+
+
+.slider .slider-container:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    transition: 0.4s;
+}
+
+input:checked + .slider-container {
+    background-color: #4CAF50;
+}
+
+
+input:checked + .slider-container:before {
+    transform: translateX(26px);
+}
+
+div .poisk{
+    margin: 0 0;
+    padding: 0px 29px 15px 0;
+    width: 450px;
+}
+input{
+    width: 456px;
+    height: 30px;
+    padding: 10px 10px 30px 0;
+    margin: 0 0 30px 0;
+}
+
+
+.scrollable-list {
+    width: 433px;        
+    height: 100px;       
+    overflow-y: scroll; 
+    border: 1px solid #ccc; 
+    padding: 10px 10px 10px 10px;      
+
+    background-color: white;
+}
+
+.scrollable-list ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none; 
+}
+
+.scrollable-list li {
+    padding: 5px 0;
+    border-bottom: 1px solid #ddd; 
+}
+
+
+
+
+
+select#vibor{
+    padding: 1em 1em;
+    width: 450px;
+    height: 50px;
+    font-size: 16px;
+    font-weight: 500;
+
+}
+
+.options{
+    padding: 0 0 20px 0;
+}
+
+th, td {
+    border: 0.5px solid rgb(255, 255, 255); /* Граница для ячеек */
+    padding: 10px;
+    text-align: center;
+    color: white;
+    padding: 0 0;
+    width: 43px;
+    height: 24px;
+}
+
+th {
+    background-color: green;
+}
+
+table{
+    width: 456px;
+    height: 200px;
+}
+
+td{
+    
+    background-color: white;
+}
+
+#lect{
+    background-color: #83f9ba;
+}
+
+#ep{
+    background-color: #dd4242;
+}
+#s{
+    background-color: #1e065a;
+}
+#r{
+    background-color: orange;
+}
+
+div .text{
+    width: 456px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+div .text p{
+    color: white;
+    font-size: 12px;
+    font-weight: 900;
+    padding: 0px 10px 5px 10px;
+}
+
+img{
+    padding: 0 0 0 270px;
+    width: 130px;
+    justify-items: center;
+    justify-content: center;
+}
+div .right{
+    width: 600px;
+    justify-content: center;
+    justify-items: center;
+}
+.right h1{
+    width: 700px;
+    text-align: center;
+    font-size: 25px;
+    color: white;
+}
