@@ -3,162 +3,159 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Orarul Cursurilor</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="left">
-        <div class="orarul">
-            <h1>Orarul Cursurilor</h1>
-        </div>
-        <div class="grupe">
-            <Button>Grupe</Button>
-            <Button>Profesori</Button>
-            <Button>Aule</Button>
-        </div>
+    <div class="container">
+        <!-- Left Section -->
+        <div class="left">
+            <div class="orarul">
+                <h1>Orarul Cursurilor</h1>
+            </div>
 
-        <div class="regim">
-            <p>Regim pentru student</p>
-            <label class="slider">
-                <input type="checkbox" id="toggle">
-                <span class="slider-container"></span>
-            </label>
+            <div class="grupe">
+                <button>Grupe</button>
+                <button>Profesori</button>
+                <button>Aule</button>
+            </div>
 
-        </div>
-        <div class="poisk">
-           
-            <input type="search" id="searchInput" autocomplete="off" class="uk-search-input uk-width-1-1">
-            
-            <div class="scrollable-list">
-                <ul>
-                    <li>IS21R</li>
-                    <li>MI11R</li>
-                    <li>IS23Z</li>
-                    <li>IT15E</li>
-                    <li>IS21R</li>
-                    <li>IS21R</li>
-                    <li>IS21R</li>
-                    <li>Элемент 8</li>
-                    <li>Элемент 9</li>
-                    <li>Элемент 10</li>
-                </ul>
+            <div class="regim">
+                <p>Regim pentru student</p>
+                <label class="slider">
+                    <input type="checkbox" id="toggle">
+                    <span class="slider-container"></span>
+                </label>
+            </div>
+
+            <div class="poisk">
+                <input type="search" id="searchInput" autocomplete="off" class="uk-search-input uk-width-1-1">
+                <div class="scrollable-list">
+                    <ul>
+                        <li>IS21R</li>
+                        <li>MI11R</li>
+                        <li>IS23Z</li>
+                        <li>IT15E</li>
+                        <li>IS21R</li>
+                        <li>IS21R</li>
+                        <li>IS21R</li>
+                        <li>Элемент 8</li>
+                        <li>Элемент 9</li>
+                        <li>Элемент 10</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="options">
+                <select id="vibor" name="day">
+                    <option value="Pn">Понедельник</option>
+                    <option value="2">Вторник</option>
+                    <option value="3">Среда</option>
+                    <option value="4">Четверг</option>
+                    <option value="5">Пятница</option>
+                    <option value="6">Суббота</option>
+                    <option value="7">Воскресенье</option>
+                </select>
+            </div>
+
+            <div class="tablita">
+                <table class="rasp">
+                    <thead>
+                        <tr class="green">
+                            <th></th>
+                            <th>1</th>
+                            <th>2</th>
+                            <th>3</th>
+                            <th>4</th>
+                            <th>5</th>
+                            <th>6</th>
+                            <th>7</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="green">
+                            <td>L-18</td>
+                            <td class="lect">L</td>
+                            <td class="lect">L</td>
+                            <td></td>
+                            <td class="ep">EP</td>
+                            <td class="s">S</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Ma-19</td>
+                            <td></td>
+                            <td></td>
+                            <td>P</td>
+                            <td class="lect">L</td>
+                            <td class="lect">L</td>
+                            <td class="lect">L</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Mi-20</td>
+                            <td></td>
+                            <td></td>
+                            <td class="lect">L</td>
+                            <td class="ep">EP</td>
+                            <td class="lect">L</td>
+                            <td class="s">S</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>J-21</td>
+                            <td class="r">R</td>
+                            <td></td>
+                            <td class="r">R</td>
+                            <td class="s">S</td>
+                            <td class="lect">L</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>V-22</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td class="lect">L</td>
+                            <td class="ep">EP</td>
+                            <td class="s">S</td>
+                            <td class="r">R</td>
+                        </tr>
+                        <tr>
+                            <td>S-23</td>
+                            <td class="ep">EP</td>
+                            <td class="lect">L</td>
+                            <td class="s">S</td>
+                            <td class="s">S</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="text">
+                <p>P - prelegeri</p>
+                <p>S - seminar</p>
+                <p>L - laborator</p>
+                <p>PC - proiect de curs</p>
+                <p>EP - evaluare periodica</p>
+                <p>C - consultatie</p>
+                <p>E - examinare</p>
+                <p>R - reexaminare</p>
+                <p>SP - seminar prealabil</p>
+                <p>ST - seminar de totalizare</p>
             </div>
         </div>
-        
-            <!-- Дополнительные варианты -->
-        <div class="options">
-            <select id="vibor" name="day">
-                 <option value="Pn">Понедельник</option>
-                <option value="2">Вторник</option>
-                <option value="3">Среда</option>
-                <option value="4">Четверг</option>
-                <option value="5">Пятница</option>
-                <option value="6">Суббота</option>
-                <option value="7">Воскресенье</option>
-            </select>
-        </div>
-        <div class="tablita">
-            <table class="rasp">
-                <thead>
-                    <tr class="green">
-                        <th></th>
-                        <th>1</th>
-                        <th>2</th>
-                        <th>3</th>
-                        <th>4</th>
-                        <th>5</th>
-                        <th>6</th>
-                        <th>7</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr class="green">
-                        <td style="background-color: green;">L-18</td>
-                        <td id="lect">L</td>
-                        <td id="lect">L</td>
-                        <td></td>
-                        <td id="ep">EP</td>
-                        <td id="s">S</td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td style="background-color: green;">Ma-19</td>
-                        <td></td>
-                        <td></td>
-                        <td>P</td>
-                        <td id="lect">L</td>
-                        <td id="lect">L</td>
-                        <td id="lect">L</td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td style="background-color: green;">Mi-20</td>
-                        <td></td>
-                        <td></td>
-                        <td id="lect">L</td>
-                        <td id="ep">EP</td>
-                        <td id="lect">L</td>
-                        <td id="s">S</td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td style="background-color: green;">J-21</td>
-                        <td id="r">R</td>
-                        <td></td>
-                        <td id="r">R</td>
-                        <td id="s">S</td>
-                        <td id="lect">L</td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td style="background-color: green;">V-22</td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td id="lect">L</td>
-                        <td id="ep">EP</td>
-                        <td id="s">S</td>
-                        <td id="r">R</td>
-                    </tr>
-                    <tr>
-                        <td style="background-color: green;">S-23</td>
-                        <td id="ep">EP</td>
-                        <td id="lect">L</td>
-                        <td id="s">S</td>
-                        <td id="s">S</td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-        <div class="text">
-            <p>P - prelegeri</p>
-            <p>S -seminar</p>
-            <p>L - laborator</p>
-            <p>PC - proiect de curs</p>
-            <p>EP - evaluare periodica</p>
-            <p>C - consultatie</p>
-            <p>E - examinare</p>
-            <p>R - reexaminare</p>
-            <p>SP - seminar prealabil</p>
-            <p>ST - seminar de totalizare</p>
-        </div>
-        
-       
 
+        <!-- Right Section -->
+        <div class="right">
+            <img src="img/logo_usarb.png" alt="Logo Universitatea de Stat 'Aleco Russo' din Balti">
+            <h1>UNIVERSITATEA DE STAT "ALECO RUSSO" DIN BALTI</h1>
+        </div>
     </div>
-
-    <div class="right">
-        <img src="img/logo_usarb.png" alt="">
-        <h1>UNIVERSITATEA DE STAT "ALECO RUSSO" DIN BALTI</h1>
-
-
-    </div>
-
-    
 </body>
 </html>
